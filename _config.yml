@@ -1,0 +1,45 @@
+# GitHub Pages 설정
+title: "AppTrio - Privacy Policy"
+description: "AppTrio 앱들의 개인정보처리방침"
+theme: minima
+
+# 사이트 설정
+url: "https://apptriohelp.github.io"
+baseurl: "/hifi-status-privacy-policy"
+
+# 작성자 정보
+author:
+  name: "AppTrio"
+  email: "apptriohelp@gmail.com"
+
+# 플러그인
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# 마크다운 설정
+markdown: kramdown
+highlighter: rouge
+
+# 제외할 파일들
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+
+# 포함할 파일들
+include:
+  - _pages
+
+# 기본 레이아웃
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
